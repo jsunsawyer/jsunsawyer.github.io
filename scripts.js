@@ -1,10 +1,10 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-// Smooth 2.5x slowness due to fast and choppy PC mouse for presentation
+// Smooth slowness due to fast and choppy PC mouse for presentation
 let smoother = ScrollSmoother.create({
   wrapper: '#smooth-wrapper',
   content: '#smooth-content',
-  smooth: 2.5,
+  smooth: 4,
   effects: true,
 });
 
