@@ -4,8 +4,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 let smoother = ScrollSmoother.create({
   wrapper: '#smooth-wrapper',
   content: '#smooth-content',
-  smooth: 14,
-  effects: true,
+  smooth: 1.2,
 });
 
 // Header
