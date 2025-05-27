@@ -1,14 +1,5 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-// Reduce scroll speed
-document.addEventListener('wheel', function(event) {
-  event.preventDefault();
-  window.scrollBy({
-    left: event.deltaX / 2,
-    top: event.deltaY / 2,
-  });
-}, { passive: false });
-
 // Smooth slowness due to fast and choppy PC mouse for presentation
 let smoother = ScrollSmoother.create({
   wrapper: '#smooth-wrapper',
